@@ -48,7 +48,15 @@ define('BLL_HOME', SITE_ROOT . 'module/home/model/BLL/');
 define('MODEL_HOME', SITE_ROOT . 'module/home/model/model/');
 define('HOME_JS_PATH', SITE_PATH . 'module/home/view/js/');
 
-//model home
+//model login
+define('FUNCTIONS_LOGIN', SITE_ROOT . 'module/login/utils/');
+define('MODEL_PATH_LOGIN', SITE_ROOT . 'module/login/model/');
+define('DAO_LOGIN', SITE_ROOT . 'module/login/model/DAO/');
+define('BLL_LOGIN', SITE_ROOT . 'module/login/model/BLL/');
+define('MODEL_LOGIN', SITE_ROOT . 'module/login/model/model/');
+define('LOGIN_JS_PATH', SITE_PATH . 'module/login/view/js/');
+
+//model contact
 define('CONTACT_JS_PATH', SITE_PATH . 'module/contact/view/js/');
 
 //amigables

@@ -1,0 +1,37 @@
+<script type="text/javascript" src="<?php echo LOGIN_JS_PATH ?>login.js"></script>
+<script src="https://cdn.auth0.com/js/auth0/9.2.2/auth0.min.js"></script>
+<section id="lgoin-page-wrap" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-8 m-auto">
+                <div class="login-page-content">
+                    <div class="login-form">
+                        <h3>SIGN IN</h3>
+                        <form autocomplete="on" method="post" name="formlogin" id="formlogin">
+                            <div class="username">
+                                <input type="text" id="username" name="username" placeholder="Email or Username">
+                                <span id="e_user" class="styerror"></span>
+                            </div>
+                            <div class="password">
+                                <input type="password" id="passwd" name="passwd" placeholder="Password">
+                                <span id="e_passwd" class="styerror"></span>
+                            </div>
+                            <div class="log-btn">
+                                <button type="button" name="login2" id="login2"><i class="fa fa-sign-in"></i> Log In</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="login-other">
+                        <span class="or">or</span>
+                        <a id="logRS" class="login-with-btn github"><i class="fa fa-github"></i> Login With Github</a>
+                        <a id="logRS" class="login-with-btn google"><i class="fa fa-google"></i> Login With Google</a>
+                    </div>
+                    <div class="create-ac">
+                        <p>Don't have an account? <a href="index.php?page=controller_login&op=viewregis">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

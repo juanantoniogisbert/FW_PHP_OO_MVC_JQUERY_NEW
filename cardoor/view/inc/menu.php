@@ -28,6 +28,13 @@
                                                 echo 'deactivate';
                                         ?>"><a href="<?php amigable('?module=contact&function=list_contact'); ?>">Contact</a>
                                     </li>
+                                    <li class="
+                                        <?php if($_GET['module'] === 'login')
+                                                echo'active';
+                                            else
+                                                echo 'deactivate';
+                                        ?>"><a href="<?php amigable('?module=login&function=view_register'); ?>">Login</a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>

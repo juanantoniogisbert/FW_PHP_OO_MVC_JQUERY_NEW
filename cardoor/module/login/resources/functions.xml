@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functions>
+    <function>
+        <name>view_login</name>
+        <uri>view_login</uri>
+    </function>
+    <function>
+        <name>view_register</name>
+        <uri>view_register</uri>
+    </function>
+    <function>
+        <name>log_social</name>
+        <uri>log_social</uri>
+    </function>
+    <function>
+        <name>validate_register</name>
+        <uri>validate_register</uri>
+    </function>
+</functions>

@@ -24,11 +24,14 @@ class home_bll{
       return $this->dao->select_all_cars_DAO($this->db);
     }
 
-    // public function obtain_provinces_BLL(){
-    //   return $this->dao->obtain_provinces_DAO();
-    // }
+    public function more_cars_home_BLL($arrArgument){
+      return $this->dao->select_more_cars($this->db,$arrArgument);
+    }
 
-    // public function obtain_cities_BLL($arrArgument){
-    //   return $this->dao->obtain_cities_DAO($arrArgument);
-    // }
+    public function load_car_name_BLL(){
+      return $this->dao->select_load_car_name($this->db);
+    }
+    public function select_name_car_auto_BLL($arrArgument){
+      return $this->dao->select_name_car_auto($this->db,$arrArgument);
+    }
 }

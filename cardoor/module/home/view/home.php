@@ -61,7 +61,7 @@
                     <div class="col-lg-12">
                         <div class="booka-car-content">
                             <form action="index3.html">
-                                <div class="pick-location bookinput-item">
+                                <!-- <div class="pick-location bookinput-item">
                                     <select class="custom-select" id="cboTipos">
                                         <option value="0">Seleccione un tipo</option>
                                     </select>
@@ -71,7 +71,7 @@
                                     <select class="custom-select" id="cboGamas">
                                         <option value="0">Seleccione una gama</option>
                                     </select>
-                                </div>
+                                </div> -->
 
                                 <div class="contact-form">
                                     <form action="index.html">
@@ -87,9 +87,9 @@
                                     </form>
                                 </div>
 
-                                <div class="bookcar-btn bookinput-item">
+                                <!-- <div class="bookcar-btn bookinput-item">
                                     <button type="submit" id="send">Book Car</button>
-                                </div>
+                                </div> -->
 
                             </form>
                         </div>
@@ -101,6 +101,12 @@
         <!--== Book A Car Area End ==-->
 
         <!--== Our Cars Area Start ==-->
+        <form name="search_breed" id="search_breed" class="search_breed">
+	        <input type="text" value="" placeholder="Buscar nombre..." class="input_search" id="keyword" list="datalist">
+	        <input name="Submit" id="Submit" class="button_search" type="button" value="Buscar nombre" />
+	    </form>
+        <div id="list_auto_car"></div>
+        
         <section id="our-cars" class="section-padding">
             <div class="container">
                 <div class="row">
@@ -117,5 +123,7 @@
             </div>
         </section>
         <div id="list_cars_home" class="columna"></div>
-    </section>
+        <div id="cars_scroll" class="columna"></div>
+        <button class="scroll" id="scroll_more" style="text-align: center; display: inline-block;">Mostrar más</button>
+</section>
 </div>

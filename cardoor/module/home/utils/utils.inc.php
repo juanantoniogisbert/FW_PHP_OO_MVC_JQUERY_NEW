@@ -54,4 +54,4 @@ function paint_template_search($message){
 			print ("</div> \n");
 			print ("</div> \n");
 		print ("</section> \n");
-	}
+}

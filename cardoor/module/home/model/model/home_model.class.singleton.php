@@ -22,12 +22,16 @@ class home_model {
         return $this->bll->select_all_cars_BLL();
     }
 
-    // public function obtain_provinces(){
-    //     return $this->bll->obtain_provinces_BLL();
-    // }
+    public function more_cars_home($arrArgument){
+        return $this->bll->more_cars_home_BLL($arrArgument);
+    }
 
-    // public Function obtain_cities($arrArgument){
-    //     return $this->bll->obtain_cities_BLL($arrArgument);
-    // }
+    public function load_car_name(){
+        return $this->bll->load_car_name_BLL();
+    }
+
+    public function select_name_car_auto($arrArgument){
+        return $this->bll->select_name_car_auto_BLL($arrArgument);
+    }
 
 }

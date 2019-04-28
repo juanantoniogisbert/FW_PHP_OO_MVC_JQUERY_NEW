@@ -37,66 +37,56 @@
                 exit();
             }
         }
+
+        function more_cars() {
+	    	if ((isset($_POST["more_cars"])) && ($_POST["more_cars"] == true)){
+				$json = array();
+			 	$json = loadModel(MODEL_HOME, "home_model", "more_cars_home",$_POST['position']);
+			 	echo json_encode($json);
+			}
+        }
+
+        function select_name_car_auto() {
+	    	if ((isset($_POST["select_name_car_auto"])) && ($_POST["select_name_car_auto"] == true)){
+				$json = array();
+			 	$json = loadModel(MODEL_HOME, "home_model", "select_name_car_auto",$_POST['keyword']);
+			 	echo json_encode($json);
+			}
+	    }
+
+        function load_car_name(){
+	    	if ((isset($_POST["load_car_name"])) && ($_POST["load_car_name"] == true)){
+				$json = array();
+			 	$json = loadModel(MODEL_HOME, "home_model", "load_car_name");
+			 	echo json_encode($json);
+			}
+        }
+        
+        
     }
-    // switch($_GET['op']){
+            // function details() {
+            //     try {
+            //         $daoshop = new DAOShop();
+            //         $res = loadModel(MODEL_SHOP, "shop_model", "select_cars_details");
+            //         $datos = get_object_vars($res);
+            //     } catch (Exception $e) {
+            //         echo json_encode("error1");
+            //     }
+                
+            //     if (!$res) {
+            //         echo json_encode("error2");
+            //     }else{
+            //         echo json_encode($res);
+            //         exit();
+            //     }
+            // }
+        
+            // function details2() {
+            //     $_SESSION['id']=$_GET['id'];
+            //     include("module/home/view/details_home.php");
+            // }
 
-    //     case 'home':
-    //         try{
-    //             $daohome = new DAOHome();
-    //             $rdo = $daohome->select_all_cars();
-    //         }catch (Exception $e){
-    //             $callback = 'index.php?page=503';
-    //             die('<script>window.location.href="'.$callback .'";</script>');
-    //         }
-    //         if(!$rdo){
-    //             $callback = 'index.php?page=503';
-    //             die('<script>window.location.href="'.$callback .'";</script>');
-    //         }else{
-    //             include("module/home/view/home.php");
-    //         }
-    //     break;
 
-    //     case 'read_modal':
-    //         // echo $_GET["modal"];
-    //         // exit;
-    //         try{
-    //             $daohome = new DAOHome();
-    //             $rdo = $daohome->select_cars($_GET['modal']);
-    //         }catch (Exception $e){
-    //             echo json_encode("error1");
-    //             exit;
-    //         }
-    //         if(!$rdo){
-    //             echo json_encode("error2");
-    //             exit;
-    //         }else{
-    //             $cars=get_object_vars($rdo);
-    //             echo json_encode($cars);
-    //             exit;
-    //         }
-    //     break;
-
-    //     case 'details':
-    //         try {
-    //             $daoshop = new DAOShop();
-    //             $res = $daoshop->select_cars_details($_SESSION['id']);
-    //             $datos = get_object_vars($res);
-    //         } catch (Exception $e) {
-    //             echo json_encode("error1");
-    //         }
-            
-    //         if (!$res) {
-    //             echo json_encode("error2");
-    //         }else{
-    //             echo json_encode($res);
-    //             exit();
-    //         }
-    //     break;
-    
-    //     case 'details2':
-    //         $_SESSION['id']=$_GET['id'];
-    //         include("module/home/view/details_home.php");
-    //     break;
 
     //     case 'dropdown':
     //         try{
